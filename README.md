@@ -6,7 +6,7 @@ The following datasets are from our 10-month Dizzy deployment in 2021/2022. We'r
 
 In order to preserve the privacy of domain operators, we only share the MD5 hash of the domain name (excluding .onion) in hexademical format. For example, Facebook's onion domain is `facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd` and its MD5 hash is `0e8b44ac0c467c56ab19c6636adabdfb`.
 
-## [domains-basic.json]()
+## [domains-basic.json](https://raw.githubusercontent.com/cibr-qcri/dizzy-datasets/main/domains-basic.json)
 
 This dataset contains basic domain information from our crawl.
 
