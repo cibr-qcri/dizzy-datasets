@@ -8,9 +8,9 @@ In order to preserve the privacy of domain operators, we only share the MD5 hash
 
 ## [domains-basic.json](https://raw.githubusercontent.com/cibr-qcri/dizzy-datasets/main/domains-basic.json)
 
-This dataset contains basic domain information from our crawl.
+This dataset contains basic information of 37,479 unique domains from our crawl. Each line in the file is a JSON dump of an key/value object describing a domain, as follows:
 
-| Field           | Description                                                                    |
+| Key             | Value                                                                          |
 |-----------------|--------------------------------------------------------------------------------|
 | domain_md5      | MD5 hexadecimal hash of the onion domain                                       |
 | crawl_timestamp | Unix timestamp when the page was crawled                                       |
