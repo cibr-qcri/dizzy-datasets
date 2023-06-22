@@ -16,15 +16,14 @@ This way you'll be able to know if you have the same domain names by comparing t
 
 ## [domains-basic.json](https://raw.githubusercontent.com/cibr-qcri/dizzy-datasets/main/domains-basic.json)
 
-This dataset contains basic webpage information of 37,479 unique domains from our crawl. Each line in the dataset file is a JSON dump of a key/value object describing a webpage of a domain. There is exactly one page per domain with the following information:
+This dataset contains basic information of 32,555 unique onion domains from our crawl. Each line in the dataset file is a JSON dump of a key/value object describing a domain, as follows:
 
-| Key             | Value                                                                       |
-|-----------------|-----------------------------------------------------------------------------|
-| domain_md5      | MD5 hexadecimal hash of the onion domain (see above)                        |
-| crawl_timestamp | Unix timestamp when the page was crawled                                    |
-| onion_version   | Onion service version number (2 or 3)                                       |
-| is_homepage     | True if the page is returned when visiting the domain at root path          |
-| url_path        | The path used to crawl the page or its final redirection in the same domain |
+| Key        | Value                                                                                         |
+|------------|-----------------------------------------------------------------------------------------------|
+| domain     | MD5 hexadecimal hash of the onion domain with `.onion` TLD                                    |
+| is_v3      | True is the domain is hosted by a v3 onion service                                            |
+| category   | Domain category: "socialmedia", "marketplace", "pornography", "crypto", "indexer", or "other" |
+| is_illicit | True if domain hosts illict or illegal content (e.g., CSAM, drugs)                            |
 
 ## Citation
 
