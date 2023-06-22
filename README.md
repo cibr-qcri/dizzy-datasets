@@ -20,9 +20,9 @@ This dataset contains basic webpage information of 37,479 unique domains from ou
 
 | Key             | Value                                                                       |
 |-----------------|-----------------------------------------------------------------------------|
-| domain_md5      | MD5 hexadecimal hash of the onion domain                                    |
+| domain_md5      | MD5 hexadecimal hash of the onion domain (see above)                        |
 | crawl_timestamp | Unix timestamp when the page was crawled                                    |
-| onion_version   | Onion service version number                                                |
+| onion_version   | Onion service version number (2 or 3)                                       |
 | is_homepage     | True if the page is returned when visiting the domain at root path          |
 | url_path        | The path used to crawl the page or its final redirection in the same domain |
 
