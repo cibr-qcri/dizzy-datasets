@@ -14,7 +14,7 @@ In order to preserve the privacy of domain operators, we only share the MD5 hash
 
 This way you'll be able to know if you have the same domain names by comparing their MD5 hashes. This is the methodology used by [Ahmia](https://ahmia.fi/blacklist/) to share blacklisted onion domains.
 
-Each dataset is a JSON file (i.e., lines of JSON strings) that is compressed using ZIP archive file format. Make sure to uncompress first.
+Each dataset is a JSON file (i.e., lines of JSON strings) that is compressed using ZIP archive file format. Make sure to uncompress the file before parsing it.
 
 ## [domains-basic.json.zip](https://raw.githubusercontent.com/cibr-qcri/dizzy-datasets/main/domains-basic.json.zip)
 
