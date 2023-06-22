@@ -39,6 +39,16 @@ This dataset contains basic information of 514,050 unique Bitcoin addresses from
 | path          | Webpage URL path where the address was found                               |
 | is_attributed | True if domain self-attribute the address as a payment or donation address |
 
+## [pages-basic.json.zip](https://raw.githubusercontent.com/cibr-qcri/dizzy-datasets/main/pages-basic.json.zip)
+
+This dataset contains basic information of 20,779 unique webpages from our crawl. Each line in the dataset file is a JSON dump of a key/value object describing a crawled webpage.
+
+| Key      | Value                                                      |
+|----------|------------------------------------------------------------|
+| crawl_at | Unix timestamp when the page was crawled                   |
+| domain   | MD5 hexadecimal hash of the onion domain with `.onion` TLD |
+| is_v3    | True is the domain is hosted by a v3 onion service         |
+| path     | URL path to the crawled webpage                            |
 
 ## Citation
 
