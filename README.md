@@ -14,7 +14,7 @@ In order to preserve the privacy of domain operators, we only share the MD5 hash
 
 This way you'll be able to know if you have the same domain names by comparing their MD5 hashes. This is the methodology used by [Ahmia](https://ahmia.fi/blacklist/) to share blacklisted onion domains.
 
-## [domains-basic.json](https://raw.githubusercontent.com/cibr-qcri/dizzy-datasets/main/domains-basic.json)
+## [domains-basic.json](https://raw.githubusercontent.com/cibr-qcri/dizzy-datasets/main/domains-basic.json.zip)
 
 This dataset contains basic information of 32,555 unique onion domains from our crawl. Each line in the dataset file is a JSON dump of a key/value object describing a domain, as follows:
 
@@ -25,7 +25,7 @@ This dataset contains basic information of 32,555 unique onion domains from our 
 | category   | Domain category: "socialmedia", "marketplace", "pornography", "crypto", "indexer", or "other" |
 | is_illicit | True if domain hosts illict or illegal content (e.g., CSAM, drugs)                            |
 
-## [btc-basic.json](https://raw.githubusercontent.com/cibr-qcri/dizzy-datasets/main/btc-basic.json)
+## [btc-basic.json](https://raw.githubusercontent.com/cibr-qcri/dizzy-datasets/main/btc-basic.json.zip)
 
 This dataset contains basic information of 514,050 unique Bitcoin addresses from our crawl. Each line in the dataset file is a JSON dump of a key/value object describing a Bitcoin address, which domain contained, and whether the domain self-attribute the address (i.e., as a payment or donation address). Note that a Bitcoin address may be contained in multiple domains, and a domain may contain multiple addresses. Note that Bitcoin addresses found in webpages, while valid in terms of their format, may not be used in practice (i.e., they don't appear in any transaction on the blockchain).
 
