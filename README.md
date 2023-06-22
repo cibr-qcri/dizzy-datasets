@@ -25,6 +25,19 @@ This dataset contains basic information of 32,555 unique onion domains from our 
 | category   | Domain category: "socialmedia", "marketplace", "pornography", "crypto", "indexer", or "other" |
 | is_illicit | True if domain hosts illict or illegal content (e.g., CSAM, drugs)                            |
 
+## [btc-basic.json](https://raw.githubusercontent.com/cibr-qcri/dizzy-datasets/main/btc-basic.json)
+
+This dataset contains basic information of 514,050 unique Bitcoin addresses from our crawl. Each line in the dataset file is a JSON dump of a key/value object describing a Bitcoin address, which domain contained, and whether the domain self-attribute the address (i.e., as a payment or donation address). Note that a Bitcoin address may be contained in multiple domains, and a domain may contain multiple addresses. Note that Bitcoin addresses found in webpages, while valid in terms of their format, may not be used in practice (i.e., they don't appear in any transaction on the blockchain).
+
+| Key           | Value                                                                      |
+|---------------|----------------------------------------------------------------------------|
+| address       | Bitcoin address                                                            |
+| domain        | MD5 hexadecimal hash of the onion domain with `.onion` TLD                 |
+| is_v3         | True is the domain is hosted by a v3 onion service                         |
+| path          | Webpage URL path where the address was found                               |
+| is_attributed | True if domain self-attribute the address as a payment or donation address |
+
+
 ## Citation
 
 If you use Dizzy or any of its datasets, please cite the following [publication](https://arxiv.org/abs/2209.07202):
