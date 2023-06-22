@@ -41,7 +41,7 @@ This dataset contains basic information of 514,050 unique Bitcoin addresses from
 
 ## [pages-basic.json.zip](https://raw.githubusercontent.com/cibr-qcri/dizzy-datasets/main/pages-basic.json.zip)
 
-This dataset contains basic information of 20,779 unique webpages from our crawl. Each line in the dataset file is a JSON dump of a key/value object describing a crawled webpage.
+This dataset contains basic information of 20,779 unique webpages from our crawl. Each line in the dataset file is a JSON dump of a key/value object describing a crawled webpage. This is a small sample of the complete crawl (60m pages), where each webpage maps to exactly one domain that is unique across the dataset.
 
 | Key      | Value                                                      |
 |----------|------------------------------------------------------------|
