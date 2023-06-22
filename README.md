@@ -4,7 +4,15 @@ Public datasets from [Dizzy](https://dizzy-dev.cibr.qcri.org) – a darkweb anal
 
 The following datasets are from our 10-month Dizzy deployment in 2021/2022. We're working with our IRB to decide which parts of the complete dataset are _fine_ to share, given that some domains host illicit content. As of now, we'll be releasing one or more smaller datasets with useful annotations.
 
-In order to preserve the privacy of domain operators, we only share the MD5 hash of the domain name (including .onion) in hexademical format. For example, Facebook's onion domain is `facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion` and its MD5 hash is `5a59274ccdd9a8c5cbe969e971e92aa5`. This way you'll be able to know if you have the same domain by comparing its MD5 hashes.
+In order to preserve the privacy of domain operators, we only share the MD5 hash of the domain name (including .onion) in hexademical format. For example, the hash of Facebook's v3 onion domain in Python is:
+
+```python
+>>> import hashlib
+>>> hashlib.md5(b"facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion").hexdigest()
+'5a59274ccdd9a8c5cbe969e971e92aa5'
+```
+
+This way you'll be able to know if you have the same domain names by comparing their MD5 hashes. This is the methodology used by [Ahmia](https://ahmia.fi/blacklist/) to share blacklisted onion domains.
 
 ## [domains-basic.json](https://raw.githubusercontent.com/cibr-qcri/dizzy-datasets/main/domains-basic.json)
 
@@ -29,3 +37,7 @@ If you use Dizzy or any of its datasets, please cite the following [publication]
   year={2023}
 }
 ```
+
+## Acknowledgment
+
+We would like to thank [Pieter Hartel](https://www.tudelft.nl/en/staff/pieter.hartel/) for his advice on data sharing.
